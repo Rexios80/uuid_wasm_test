@@ -1,8 +1,10 @@
-import 'package:uuid_wasm_test/uuid_wasm_test.dart';
 import 'package:test/test.dart';
+import 'package:uuid/uuid.dart';
 
 void main() {
-  test('calculate', () {
-    expect(calculate(), 42);
+  test('uuid test', () {
+    for (var i = 0; i < 5; i++) {
+      print(const Uuid().v4());
+    }
   });
 }
